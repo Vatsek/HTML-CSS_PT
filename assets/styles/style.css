@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+}
+
+/* понять надо или нет */
+ul {
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Regular.ttf");
+    font-weight: 400;
+}
+
+.center {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: #222;
+        
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.item-left {
+    display: flex;
+    gap: 41px;
+}
+
+/* на макетах разные "gap" и не везде ровно. Взял из Homework9. */
+.item-right {
+    display: flex;
+    gap: 33px;
+}
+
+.intro {
+    background-color: #F1E4E6;
+}
+
+.intro-items {
+    display: flex;
+
+    align-items: center;
+    height: 764px;
+    gap: 64px;
+}
+
+.title {
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F;
+}
+
+.title-text-top {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+}
+
+.title-text-bottom {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+}
+
+.title-bottom__color {
+    color: #F16D7F;
+}
+
+.categories {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.categories-item {
+    position: relative;
+    background-color: rgba(33, 22, 22, 0.70);
+}
+
+.categories-item img {
+	opacity: 0.7;
+}
+
+.categories-item-big img {
+    opacity: 0.7;
+}
+
+.categories-item-big {
+    position: relative;
+    grid-column: span 3;
+    background-color: rgba(33, 22, 22, 0.70);
+}
+
+.categories-item-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+}
+
+.categories-item-text-color {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.products {
+    margin-top: 96px;
+}
+
+.products-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-title-title {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+}
+
+.products-title-text {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+}
+
+.product-items {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #F8F8F8;
+}
+
+.product-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 16px;    
+}
+
+.product-item-text__title {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+}
+
+.product-item-text__text {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+}
+
+.product-item-text__price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+}
+
+.products-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.button-form {
+    background-color: #FFF;
+    width: 212px;
+    height: 48px;
+    border-color: #FF6A6A;
+}
+
+.button-text {
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+}
