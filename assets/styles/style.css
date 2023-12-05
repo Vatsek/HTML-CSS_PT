@@ -16,7 +16,7 @@
 
 .header {
     background-color: #222;
-        
+    width: 100%; 
 }
 
 .menu {
@@ -42,11 +42,21 @@
 }
 
 .intro-items {
+    max-width: 1140px;
     display: flex;
-
     align-items: center;
-    height: 764px;
     gap: 64px;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
 }
 
 .title {
@@ -72,6 +82,10 @@
 
 .categories {
     margin-top: 65px;
+
+}
+
+.categories-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
