@@ -2,11 +2,6 @@
     margin: 0;
 }
 
-/* понять надо или нет */
-ul {
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Lato';
     src: url("../fonts/Lato-Regular.ttf");
@@ -36,9 +31,9 @@ ul {
     gap: 41px;
 }
 
-/* на макетах разные "gap" и не везде ровно. Взял из Homework9. */
 .item-right {
     display: flex;
+    /* на макетах разные "gap" и не везде ровно. Взял из Homework9. */
     gap: 33px;
 }
 
@@ -88,17 +83,18 @@ ul {
 }
 
 .categories-item img {
-	opacity: 0.7;
+    filter: brightness(30%)
 }
 
-.categories-item-big img {
-    opacity: 0.7;
-}
 
 .categories-item-big {
     position: relative;
     grid-column: span 3;
     background-color: rgba(33, 22, 22, 0.70);
+}
+
+.categories-item-big img {
+    filter: brightness(30%)
 }
 
 .categories-item-text {
