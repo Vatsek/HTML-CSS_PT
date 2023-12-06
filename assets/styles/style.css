@@ -2,10 +2,9 @@
     margin: 0;
 }
 
-@font-face {
-    font-family: 'Lato';
-    src: url("../fonts/Lato-Regular.ttf");
-    font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+html {
+font-family: 'Lato', sans-serif;
 }
 
 .center {
@@ -88,7 +87,8 @@
 }
 
 .categories-item img {
-    filter: brightness(30%)
+    filter: brightness(30%);
+    height: 100%
 }
 
 
@@ -188,14 +188,11 @@
     margin-bottom: 48px;
 }
 
-.button-form {
+.button {
     background-color: #FFF;
     width: 212px;
     height: 48px;
     border-color: #FF6A6A;
-}
-
-.button-text {
     color: #F26376;
     font-family: Lato;
     font-size: 16px;
