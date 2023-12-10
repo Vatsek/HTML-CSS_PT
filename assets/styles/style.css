@@ -13,11 +13,6 @@ font-family: 'Lato', sans-serif;
     margin-right: auto;
 }
 
-.img {
-    max-width: 100%;
-    height: auto;
-}
-
 .header {
     background-color: #222;
         
@@ -47,7 +42,6 @@ font-family: 'Lato', sans-serif;
 
 .intro-items {
     display: flex;
-
     align-items: center;
     height: 764px;
     gap: 64px;
@@ -60,18 +54,19 @@ font-family: 'Lato', sans-serif;
 
 .title-text-top {
     color: #222;
-    font-family: Lato;
     font-size: 48px;
+    font-weight: 900;
 }
 
 .title-text-bottom {
     color: #222;
-    font-family: Lato;
     font-size: 32px;
+    font-weight: 700;
 }
 
 .title-bottom__color {
     color: #F16D7F;
+    font-weight: 700;
 }
 
 .categories {
@@ -83,23 +78,25 @@ font-family: 'Lato', sans-serif;
 
 .categories-item {
     position: relative;
+}
+
+.categories-item-img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(33, 22, 22, 0.70);
 }
-
-.categories-item img {
-    filter: brightness(30%);
-    height: 100%
-}
-
 
 .categories-item-big {
     position: relative;
     grid-column: span 3;
-    background-color: rgba(33, 22, 22, 0.70);
-}
-
-.categories-item-big img {
-    filter: brightness(30%)
 }
 
 .categories-item-text {
@@ -107,16 +104,14 @@ font-family: 'Lato', sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     color: #FFF;
     text-align: center;
-    font-family: Lato;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .categories-item-text-color {
     color: #F16D7F;
-    font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -131,18 +126,21 @@ font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 6px;
 }
 
 .products-title-title {
     color: #222;
-    font-family: Lato;
     font-size: 30px;
+    font-weight: 400;
 }
 
+
 .products-title-text {
-    color: #9F9F9F;
-    font-family: Lato;
     font-size: 14px;
+    color: #9F9F9F;
+    font-weight: 400;
+
 }
 
 .product-items {
@@ -165,20 +163,20 @@ font-family: 'Lato', sans-serif;
 
 .product-item-text__title {
     color: #000;
-    font-family: Lato;
     font-size: 13px;
+    font-weight: 400;
 }
 
 .product-item-text__text {
     color: #5D5D5D;
-    font-family: Lato;
     font-size: 14px;
+    font-weight: 300;
 }
 
 .product-item-text__price {
     color: #F16D7F;
-    font-family: Lato;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .products-button {
@@ -194,6 +192,57 @@ font-family: 'Lato', sans-serif;
     height: 48px;
     border-color: #FF6A6A;
     color: #F26376;
-    font-family: Lato;
     font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1439px) {
+    .center {
+        max-width: 736px;
+    }
+
+    .menu {
+        height: 74px;
+    }
+
+    .intro-items{
+        gap: 39px;
+        height: 100%;
+    }
+
+    .title-text-top {
+        font-size: 44px;
+    }
+
+    .title-text-bottom{
+        font-size: 24px;
+    }
+
+    .categories {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .categories-item-text {
+        width: 100%;
+    }
+
+    .products {
+        margin-top: 110px;
+    }
+
+    .products-title {
+        gap: 3.3px;
+    }
+
+    .product-items {
+        margin-top: 73px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    }
+
+    .products-button {
+        margin-top: 33px;
+    }
+    
 }
