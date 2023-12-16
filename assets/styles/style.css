@@ -33,7 +33,6 @@ font-family: 'Lato', sans-serif;
 
 .item-right {
     display: flex;
-    /* на макетах разные "gap" и не везде ровно. Взял из Homework9. */
     gap: 33px;
 }
 
@@ -81,15 +80,6 @@ font-family: 'Lato', sans-serif;
     position: relative;
     width: max-content;
     height: 100%;
-}
-
-.img-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 22, 22, 0.70);
 }
 
 .categories-item-big {
@@ -264,10 +254,19 @@ font-family: 'Lato', sans-serif;
         justify-content: center;
     }
 
+    .title-text-top {
+        font-size: 38px;
+    }
+
+    .title-text-bottom {
+        font-size: 20px;
+    }
+
     .categories {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 32px;
     }
 
     .product-items {
@@ -275,11 +274,19 @@ font-family: 'Lato', sans-serif;
         flex-direction: column;
     }
 
-    .center-v2{
-        max-width: 100%;
-        padding-left: 8px;
-        padding-right: 8px;
+    .center{
+        max-width: 375px;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
     }
+
+    .center-v2 {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .categories-item {
         max-width: 100%;
         max-height: 100%;
@@ -293,5 +300,17 @@ font-family: 'Lato', sans-serif;
     .categories-item-big {
         position: relative;
         max-height: 111px;
+    }
+
+    .products {
+        margin-top: 64px;
+    }
+
+    .product-items {
+        margin-top: 64px;
+    }
+
+    .products-button {
+        margin-top: 40px;
     }
 }
