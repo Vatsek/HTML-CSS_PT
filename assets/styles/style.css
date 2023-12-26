@@ -334,7 +334,6 @@ font-family: 'Lato', sans-serif;
 .services {
     margin-top: 95px;
     background-color: #222224;
-    height: 341px;
     display: flex;
     align-items: flex-end
 }
@@ -342,12 +341,13 @@ font-family: 'Lato', sans-serif;
 .services-items {
     display: flex;
     gap: 30px;
+    padding-top: 104px;
+    padding-bottom: 104px;
 }
 
 .services__item {
     width: 360px;
     text-align: center;
-    padding-bottom: 104px;
 }
 
 .services-item__title {
@@ -371,13 +371,13 @@ font-family: 'Lato', sans-serif;
     background-image: url(../img/subscribe-img.png);
     background-position: center;
     background-size: cover;
-    height: 448px;
 }
 
 .subscribe-items {
     display: flex;
-
     gap: 327px;
+    padding-top: 97px;
+    padding-bottom: 126px;
 }
 
 .subscribe-item {
@@ -387,7 +387,7 @@ font-family: 'Lato', sans-serif;
     align-items: center;
     text-align: center;
     gap: 30px;
-    padding-top: 97px;
+    /* padding-top: 97px; */
 }
 
 .subscribe-left-item__text {
@@ -566,7 +566,26 @@ font-family: 'Lato', sans-serif;
     .products-button {
         margin-top: 33px;
     }
-    
+
+    .services {
+        margin-top: 64.52px;
+    }
+
+    .services-items {
+        display: flex;
+        flex-direction: column;
+        gap: 48.37px;
+        padding-top: 48.16px;
+        padding-bottom: 64px;
+    }
+
+    .subscribe-items {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 219px;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 767px) {
